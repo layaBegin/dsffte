@@ -30,7 +30,16 @@ export default class CommitData extends cc.Component {
     }
 
     onBtnClick(event,param){
-        this.node.active = false;
+        if (param === "close"){
+            this.node.active = false;
+        }
+        else if (param === "submit"){
+
+        }
+        else if (param === "upLoad"){
+            console.log("==== 点击上传");
+            //调用SDK
+        }
     }
 
     onDestroy(): void {
